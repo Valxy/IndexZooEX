@@ -12,7 +12,7 @@ export default function Dashboard() {
         <div className={styles.left_box_info}>
           {`ZooEx is a decentralized margin trading protocol that enables leverage trading for any tokens`}
         </div>
-        <div style={{marginTop:'40px'}}>
+        <div className={styles.enter_box}>
           <Button className={styles.enter_but}>
             Enter Zoo
           </Button>

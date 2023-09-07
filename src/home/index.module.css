@@ -104,3 +104,35 @@
   z-index: 1;
   transform: rotate(105deg)
 }
+
+
+@media (max-width: 1260px) {
+  .left{
+    position: absolute;
+    top: -200px;
+    left: -700px;
+    width: 1000px;
+    height: 1000px;
+    rotate: -170deg;
+    display: none;
+  }
+  
+  .right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 900px;
+    height: 845px;
+    display: none;
+  } 
+  
+  .middle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 840px;
+    display: none;
+  }
+
+  
+}  

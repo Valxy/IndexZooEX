@@ -24,52 +24,66 @@ const Header = () => {
   })
 
   return (
-    <div className={styles.header_container}>
-      <img src={"/logo.png"} alt="" className={styles.header_container_left} />
-      <div className={styles.header_container_right} ref={menuRef}>
-        <div>
-          <Button 
-            id="basic-button"
-            endIcon={<KeyboardArrowDownIcon />}
-            style={{
-              color: "white",
-              textTransform: "capitalize",
-              fontSize: "16px",
-              marginTop: "38px",
-              fontFamily: 'Inter',
-            }}
-            onClick={()=>{setOpen(!open)}}
-          >
-            Products
-          </Button>
-          <div className={`${open ? styles.active : styles.inactive} ${styles.dropdown_menu}` }>
-            <div>
-              <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
-              <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
-              <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
-            </div>
-          </div>
+    <div>
+      <div className={styles.mobile_header_container}>
+        <div className={styles.mobile_header_left}>
+          <img src={"/logo_mobile.png"} alt="Zoo Logo" className={styles.mobile_logo} />
         </div>
-
-        <div style={{ paddingLeft: "32px", }}>
-          <Button
-            style={{
-              color: "white",
-              textTransform: "capitalize",
-              fontSize: "16px",
-              marginTop: "38px",
-              fontFamily: 'Inter',
-            }}
-          >
-            {/* {"Zoo Doc"} */}
-            Zoo Doc
-          </Button>
-        </div>
-
-        <div style={{ paddingLeft: "20px", }} >
-          <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
+        <div className={styles.mobile_header_right}>
+          <Button style={{fontFamily: 'Inter'}} className={styles.mobile_enter}>
             Enter the Zoo
           </Button>
+          <img src={"/mobile_more_btn.png"} alt="More Button" className={styles.more_btn} />
+        </div>
+      </div>
+
+      <div className={styles.header_container}>
+        <img src={"/logo.png"} alt="" className={styles.header_container_left} />
+        <div className={styles.header_container_right} ref={menuRef}>
+          <div>
+            <Button 
+              id="basic-button"
+              endIcon={<KeyboardArrowDownIcon />}
+              style={{
+                color: "white",
+                textTransform: "capitalize",
+                fontSize: "16px",
+                marginTop: "38px",
+                fontFamily: 'Inter',
+              }}
+              onClick={()=>{setOpen(!open)}}
+            >
+              Products
+            </Button>
+            <div className={`${open ? styles.active : styles.inactive} ${styles.dropdown_menu}` }>
+              <div>
+                <DropdownItem img="/bear.png" text={"Bear"} link="https://github.com"/>
+                <DropdownItem img="/bull.png" text={"Bull"} link="https://github.com"/>
+                <DropdownItem img="/zoo.png" text={"ZooEx"} link="https://github.com"/>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ paddingLeft: "32px", }}>
+            <Button
+              style={{
+                color: "white",
+                textTransform: "capitalize",
+                fontSize: "16px",
+                marginTop: "38px",
+                fontFamily: 'Inter',
+              }}
+            >
+              {/* {"Zoo Doc"} */}
+              Zoo Doc
+            </Button>
+          </div>
+
+          <div style={{ paddingLeft: "20px", }} >
+            <Button style={{fontFamily: 'Inter',}} className={styles.header_container_right_enter}>
+              Enter the Zoo
+            </Button>
+          </div>
         </div>
       </div>
     </div>

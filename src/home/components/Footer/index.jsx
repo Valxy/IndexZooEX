@@ -16,24 +16,22 @@ const Footer = () => {
                 </div>
                 <div className={styles.right_container}>
                     <div className={styles.links_container}>
-                        <h3 className={styles.category}>The Zoo</h3>
+                        <h3 className={styles.category}>About Us</h3>
                         <p>About Us</p>
-                        <p>Blog</p>
-                        <p>Zoo Doc</p>
+                        <p>Gitbook</p>
                         <p>GitHub</p>
-                        <p>DApp</p>
-                        <p>Branding Material</p>
+                        <p>Medium</p>
+                        <p>Press Kit</p>
                     </div>
                     <div className={styles.links_container}>
-                        <h3 className={styles.category}>The Animals</h3>
-                        <p>Bear Inverse Token</p>
-                        <p>Fear Volatility Token</p>
-                        <p>Future Animals</p>
+                        <h3 className={styles.category}>Our Products</h3>
+                        <p>IndexZoo</p>
+                        <p>ZooEx</p>
                     </div>
                 </div>
             </div>
             <div className={styles.footer_bottom}>
-                <p>ZooEx ©2023. </p>
+                <p>ZooEx ©2023.</p>
             </div>
         </div>
     );
